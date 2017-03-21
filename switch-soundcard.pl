@@ -38,7 +38,7 @@ sub getCurrentSink {
  for my $pactlSinkInput (@{$sinks}) {
   return $1 if ($pactlSinkInput =~ /^\S+\s+(\d+)\s+.*/);
  }
- print "current sink not found\n";
+ print "current sink not found, possibly no audio playback\n";
  exit 1;
 }
 
